@@ -1,5 +1,7 @@
 <section>
     <h1>谈谈异步的Javascript</h1>
+    <div><small>Derui DENG</small></div>
+    <div><small>drdeng@thoughtworks.com</small></div>
 </section>
 <section>
     <ul>
