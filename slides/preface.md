@@ -1,19 +1,19 @@
 <section>
-    <h2>谈谈异步的Javascript</h2>
+    <h1>谈谈异步的Javascript</h1>
 </section>
 <section>
     <ul>
         目录
-        <li class="fragment">
+        <li>
             Javascript异步模型
         </li>
-        <li class="fragment">
+        <li>
             传统的异步执行方式
         </li>
-        <li class="fragment">
+        <li>
             Promise
         </li>
-        <li class="fragment">
+        <li>
             Async/Await
         </li>
     </ul>
