@@ -27,7 +27,7 @@ processUserInput(greeting);
     </pre>
 </section>
 <section>
-    <h2>Pub/sub pattern</h2>
+    <h1>Pub/sub pattern</h1>
     <ul>
         <li>观察者模式</li>
         <li>订阅者和发布者的解耦</li>
