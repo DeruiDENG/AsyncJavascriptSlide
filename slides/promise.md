@@ -10,7 +10,7 @@
 <section>
     <h1>基本语法</h1>
     <pre><code>
-        new Promise( function(resolve, reject) {...} /* executor */  );
+        new Promise((resolve, reject) => {...} /* executor */  );
     </code></pre>
     <small>声明一个Promise</small>
     <pre><code>
