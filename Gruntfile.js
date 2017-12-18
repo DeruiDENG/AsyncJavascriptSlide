@@ -39,6 +39,10 @@ module.exports = function(grunt) {
 				src: 'css/reveal.scss',
 				dest: 'css/reveal.css'
 			},
+		  	custom: {
+				src: 'css/app.scss',
+			 	dest: 'css/app.css'
+			},
 			themes: {
 				expand: true,
 				cwd: 'css/theme/source',
@@ -132,8 +136,12 @@ module.exports = function(grunt) {
 				tasks: 'css-themes'
 			},
 			css: {
-				files: [ 'css/reveal.scss' ],
+				files: 'css/reveal.scss',
 				tasks: 'css-core'
+			},
+		  	cssApp: {
+              files: 'css/app.scss',
+              tasks: 'css-app'
 			},
 			html: {
 				files: root.map(path => path + '/*.html')
@@ -176,6 +184,9 @@ module.exports = function(grunt) {
 
 	// Core framework CSS
 	grunt.registerTask( 'css-core', [ 'sass:core', 'autoprefixer', 'cssmin' ] );
+
+	// Custom CSS
+	grunt.registerTask( 'css-app', [ 'sass:custom', 'autoprefixer'] );
 
 	// All CSS
 	grunt.registerTask( 'css', [ 'sass', 'autoprefixer', 'cssmin' ] );
