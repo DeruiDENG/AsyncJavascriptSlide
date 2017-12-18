@@ -48,3 +48,40 @@ async function getProcessedData(url) {
 }
     </code></pre>
 </section>
+<section>
+    <h1>小测试...</h1>
+    <pre><code>
+const resolveAfter1Second = x => {
+    console.log(4);
+    return new Promise(resolve => {
+        console.log(6);
+        setTimeout(() => {
+            resolve(x);
+        }, 1000);
+    })
+};
+
+console.log(0);
+
+const asyncGet = async x => {
+    console.log(1);
+    const a = await resolveAfter1Second(10);
+    console.log(2);
+    const b = await resolveAfter1Second(20);
+    console.log(3);
+    return x + a + b;
+};
+
+asyncGet(10).then(value => {
+    console.log(`Hello, ${value}`);
+});
+    </code></pre>
+</section>
+<section>
+    <h1>Async Function vs Promise</h1>
+    <ul>
+        <li class="fragment">跟Promise相比，在语法的简洁性和可读性上，异步函数是有优势的，</li>
+        <li class="fragment">但是别忘了没有Promise就没有异步函数</li>
+    </ul>
+    <p class="fragment">结论：Async Function和Promise不存在替代关系，而是应该根据场景做出合理选择。</p>
+</section>
