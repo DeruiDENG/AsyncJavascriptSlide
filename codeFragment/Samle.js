@@ -1,8 +1,8 @@
 console.log('0');
 
-setTimeout(()=>{
+Promise.resolve().then(()=>{
   console.log('1');
-}, 0);
+});
 
 new Promise(
     (resolve) => {

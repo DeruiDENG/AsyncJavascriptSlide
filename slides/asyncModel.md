@@ -2,7 +2,7 @@
     <h1>Javascript并发模型</h1>
     <p>JavaScript 的并发模型基于"事件循环"。这个模型与像 C 或者 Java 这种其它语言中的模型截然不同。</p>
     <ul>
-        <li class="fragment" data-fragment-index="1">
+        <li class="fragment">
             你永远都不会遇到"线程安全"问题
         </li>
         <li class="fragment">
@@ -29,8 +29,11 @@
         <li>DOM APIs</li>
         <li>Fetching data APIs</li>
         <li>Hardware APIs</li>
+        <li>Etc...</li>
     </ul>
-    <a href="https://developer.mozilla.org/zh-CN/docs/Web/API" target="_blank">List of Javascript Web Api</a>
+    <div>
+        <a href="https://developer.mozilla.org/zh-CN/docs/Web/API" target="_blank">List of Javascript Web Api</a>
+    </div>
 </section>
 <section>
     <h1>事件循环(Event loop)</h1>
@@ -42,6 +45,7 @@ while (true) {
 }
     </code></pre>
     <ul>
+        <li>任务队列</li>
         <li>完整执行: 一个事件完全执行完毕，下一个事件才会执行</li>
         <li>消息添加：随时可以添加事件</li>
         <li>事件循环永不阻塞</li>

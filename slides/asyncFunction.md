@@ -29,7 +29,7 @@ add1(10).then(v => {
   console.log(v);  // prints 60 after 4 seconds.
 });
     </code></pre>
-    <ul>Async Function的语法定义
+    <ul class="fragment">Async Function的语法定义
         <li>调用 async 函数时会返回一个 Promise 对象。当这个 async 函数返回一个值时，Promise 的 resolve 方法将会处理这个值</li>
         <li>async 函数中可能会有 await 表达式，这将会使 async 函数暂停执行，等待 Promise 正常解决后继续执行 async 函数并返回解决结果</li>
     </ul>
@@ -49,7 +49,7 @@ async function getProcessedData(url) {
     </code></pre>
 </section>
 <section>
-    <h1>小测试...</h1>
+    <h1>期末考试...</h1>
     <pre><code>
 const resolveAfter1Second = x => {
     console.log(4);
@@ -82,6 +82,7 @@ asyncGet(10).then(value => {
     <ul>
         <li class="fragment">跟Promise相比，在语法的简洁性和可读性上，异步函数是有优势的，</li>
         <li class="fragment">但是别忘了没有Promise就没有异步函数</li>
+        <li class="fragment">即使有了Promise，我们也不能脱离Callback</li>
     </ul>
-    <p class="fragment">结论：Async Function和Promise不存在替代关系，而是应该根据场景做出合理选择。</p>
+    <p class="fragment">结论：Async Function和Promise不存在替代关系，Promise也不能替代callback，而是应该根据场景做出合理选择。</p>
 </section>
